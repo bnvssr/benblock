@@ -4,6 +4,12 @@ module.exports = function () {
 
   var po = page.trustedTrade;
 
+  this.Given(/^I am at Trusted Trade$/, function () {
+
+    return page.trustedTrade.loadTrustedTradeAndVerify();
+
+  });
+
   this.When(/^I initialize the Trusted Trade speeltuin Blockchain$/, function () {
 
     return po.clickInitBlockchain();
