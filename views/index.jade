@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  h1= title
+  
+  p 
+    label(for='fromAddress', class='control-label') From address: 
+    input#fromAddress(type="text", placeholder="from address")
+  p 
+    label(for='toAddress', class='control-label') To address: 
+    input#toAddress(type="text", placeholder="to address")
+  p 
+    label(for='amount', class='control-label') Amount: 
+    input#amount(type="text", placeholder="amount")
+  p
+    input(type='submit', value='Add transaction', onclick='addTransaction()')
+  br
+  p
+    label(for='balanceAddress', class='control-label') Address: 
+    input#balanceAddress(type="text", placeholder="Balance address")
+  p
+    input(type='submit', value='Get balance', onclick='getBalance()')
+  br
+  p
+    label(for='mineAddress', class='control-label') Miner's Address: 
+    input#mineAddress(type="text", placeholder="Mine address")
+  p
+    input(type='submit', value='Mine block', onclick='mineBlock()')
+  br
+  p
+    input(type='submit', value='Initialize Blockchain', onclick='initBlockchain()')
+  br
+  
+  pre#current
+    | {"chain":[],"difficulty":4,"pendingTransactions":[],"miningReward":100}

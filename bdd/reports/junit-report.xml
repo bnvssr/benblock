@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain" tests="9" failures="1" skipped="8">
+        <properties>
+            <property name="@createtestchain" value="true">
+            </property>
+            <property name="URI" value="C:/Users/visserbe/dev/blockchain/benblock/bdd/features/createTestBlockchain.feature">
+            </property>
+        </properties>
+        <testcase name="Given I am at Trusted Trade" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain" time="5.001772323">
+            <failure message="function timed out after 5000 milliseconds">function timed out after 5000 milliseconds</failure>
+        </testcase>
+        <testcase name="When I initialize the Trusted Trade speeltuin Blockchain" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When transfering" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When Joop mines a block" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When transfering" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When Kees mines a block" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When transfering" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I show the current chain" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I want to leave the browser open" classname="create-basic-blockchain-with-3-blocks;create-a-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="init-blockchain;initialize-the-trusted-trade-blockchain" tests="4" failures="1" skipped="1">
+        <properties>
+            <property name="@TrustedTradeTestBlockchain" value="true">
+            </property>
+            <property name="@init" value="true">
+            </property>
+            <property name="URI" value="C:/Users/visserbe/dev/blockchain/benblock/bdd/features/testBlockchain.feature">
+            </property>
+        </properties>
+        <testcase name="Given I am at Trusted Trade" classname="init-blockchain;initialize-the-trusted-trade-blockchain" time="4.545185256">
+        </testcase>
+        <testcase name="When I initialize the Trusted Trade speeltuin Blockchain" classname="init-blockchain;initialize-the-trusted-trade-blockchain" time="0.083148892">
+        </testcase>
+        <testcase name="Then there is only the Genesis block" classname="init-blockchain;initialize-the-trusted-trade-blockchain" time="0.037874928">
+            <failure message="AssertionError: expected 1 to equal 0">AssertionError: expected 1 to equal 0
+    at C:\Users\visserbe\dev\blockchain\benblock\bdd\page-objects\trusted-trade.js:68:48
+    at ManagedPromise.invokeCallback_ (C:\Users\visserbe\dev\blockchain\benblock\node_modules\selenium-webdriver\lib\promise.js:1341:14)
+    at TaskQueue.execute_ (C:\Users\visserbe\dev\blockchain\benblock\node_modules\selenium-webdriver\lib\promise.js:2950:14)
+    at TaskQueue.executeNext_ (C:\Users\visserbe\dev\blockchain\benblock\node_modules\selenium-webdriver\lib\promise.js:2933:27)
+    at asyncRun (C:\Users\visserbe\dev\blockchain\benblock\node_modules\selenium-webdriver\lib\promise.js:2793:27)
+    at C:\Users\visserbe\dev\blockchain\benblock\node_modules\selenium-webdriver\lib\promise.js:675:7
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+        </testcase>
+        <testcase name="And there are no pending transactions" classname="init-blockchain;initialize-the-trusted-trade-blockchain">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+</testsuites>

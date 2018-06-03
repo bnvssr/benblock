@@ -1,0 +1,27 @@
+{
+  "name": "benblock",
+  "version": "0.0.0",
+  "description": "Playground to show build up of a blockchain, run 'npm start' to trigger localhost at port 3000",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "//": "Use '-- --tags ~@search' to run all but @search",
+    "test": "node ./node_modules/selenium-cucumber-js/index.js -f bdd/features -s bdd/step-definitions",
+    "debug": "node --inspect-brk ./node_modules/selenium-cucumber-js/index.js -f bdd/features -s bdd/step-definitions",
+    "x": "node ./node_modules/selenium-cucumber-js/index.js -f bdd/features -s bdd/step-definitions -t @createtestchain"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "crypto-js": "^3.1.9-1",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11",
+    "selenium-cucumber-js": "^1.5.11"
+  }
+}

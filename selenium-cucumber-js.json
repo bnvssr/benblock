@@ -1,0 +1,8 @@
+{
+  "steps": "./bdd/step-definitions",
+  "pageObjects": "./bdd/page-objects",
+  "sharedObjects": "./bdd/shared-objects",
+  "reports": "./bdd/reports",
+  "browser": "chrome",
+  "timeout": 10000
+}
