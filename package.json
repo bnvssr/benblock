@@ -1,7 +1,7 @@
 {
   "name": "benblock",
   "version": "0.0.0",
-  "description": "Playground to show build up of a blockchain, run 'npm start' to trigger localhost at port 3000",
+  "description": "Playground to show build up of a blockchain, run 'npm start' to trigger your localhost at port 3000",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
